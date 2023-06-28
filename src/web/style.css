@@ -45,7 +45,7 @@ html, body {
 }
 
 .login-menu img {
-    width: 200px;
+    width: 300px;
     height: auto;
     margin-top: 20px;
     cursor: pointer;
@@ -58,7 +58,7 @@ html, body {
 
 .login-menu input {
 
-    width: 200px;
+    width: 250px;
     padding: 5px;
     color: white;
     background-color: black;
@@ -66,13 +66,13 @@ html, body {
 }
 
 .login-menu label{
-    width: 200px;
+    width: 250px;
     padding: 5px;
     color: white;
 }
 
 .login-menu button {
-    width: 200px;
+    width: 250px;
     padding: 5px;
     background-color: red;
     color: white;
@@ -108,4 +108,12 @@ html, body {
 #session-checkbox {
     width: 13px;
     height: 13px;
+}
+
+.logo-C {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    right: 10px; /* Ajusta la distancia desde la parte derecha */
+    width: 70px;
+    height: auto;
 }
