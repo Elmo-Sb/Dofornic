@@ -33,3 +33,79 @@ html, body {
     background-color: black;
     z-index: -1;
 }
+
+.login-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.login-menu img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-menu div {
+    height: 20px;
+
+}
+
+.login-menu input {
+
+    width: 200px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.login-menu label{
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
+
+.login-menu button {
+    width: 200px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border: 2px solid white; 
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+.login-menu .help-text {
+    text-align: left;
+}
+
+.login-menu button:hover {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+.login-menu button:active {
+    background-color: #ff6868;
+    color: white; /* Cambia el color de fondo al estar presionado */
+    border: 2px solid white;
+}
+
+.login-menu .help-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.help-text a:hover {
+    color: red;
+}
+
+#session-checkbox {
+    width: 13px;
+    height: 13px;
+}
