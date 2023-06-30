@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px 0px 0px;
+    border-bottom: 1px solid gray;
+    background: linear-gradient(90deg, white, red);
+    font-weight: bold;
+}
+.logo {
+    width: auto;
+    height: 60px;
+    margin: 0%;
+    padding: 0%;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.navbar-left ul,
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.navbar-left {
+    display: flex;
+}
+.navbar-left ul {
+    margin-left: 12px;
+}
+.navbar-left ul li a,
+.navbar-right ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.navbar-left ul li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    color: black;
+}
+.navbar-right ul li a:hover {
+    color: whitesmoke;
+}
+.boton {
+    width: 100px;
+    padding: 5px;
+    background-color: red;
+    color: black;
+    border: 2px solid whi; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.boton:hover {
+    background-color: white;
+    color: red;
+    border: 2px solid black;
+}
+
+.boton:active {
+    background-color: #ff6868;
+    color: white; /* Cambia el color de fondo al estar presionado */
+    border: 2px solid white;
+}
+.class {
+    background-color: black;
+    position: absolute;
+    bottom: 100vh;
+    top: 100vh;
+    right: 100vh;
+    left: 100vh;
+}
