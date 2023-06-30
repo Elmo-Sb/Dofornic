@@ -72,7 +72,6 @@ nav {
     color: red;
     border: 2px solid black;
 }
-
 .boton:active {
     background-color: #ff6868;
     color: white; /* Cambia el color de fondo al estar presionado */
@@ -85,4 +84,70 @@ nav {
     top: 100vh;
     right: 100vh;
     left: 100vh;
+}
+#logoCentral {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    width: auto;
+    margin-top: 10px;
+}
+#primerTexto {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+}
+.bloqueInferior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#cuadrorojo {
+    width: 55vh;
+    height: 55vh;
+    background: linear-gradient(to right top, red, black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+#trabajando {
+    z-index: 1;
+    position: absolute;
+    bottom: 5vh;
+    left: 6vh;
+    width: auto;
+    height: 45vh;
+}
+#titulo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+}
+.lista {
+    color: white;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    line-height: 2;
+}
+#letra {
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: auto;
+    opacity: 0.25;
 }
