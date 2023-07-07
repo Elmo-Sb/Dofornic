@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: black;
+    background-color: #d9d9d9;
 }
 nav {
     list-style: none;
@@ -13,7 +13,7 @@ nav {
     background-image: linear-gradient(black, red);
     background-repeat: no-repeat;
     background-position: top;
-    border-right: 1px solid gray;
+    border-right: 1px solid black;
     position: fixed;
     left: 0;
     top: 0;
@@ -36,7 +36,7 @@ nav {
     margin: 15px 0;
     transition: background-color 0.3s;
 }
-.navbar ul li a{
+.navbar ul li{
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -48,11 +48,12 @@ nav {
     width: 100%;
     box-sizing: border-box;
 }
-.navbar ul li a:hover {
+.navbar ul li:hover {
     background-color: gray;
     border: 1px solid white;
-}
-.navbar li a img {
+    cursor: pointer;
+    }
+.navbar li img {
     width: 20%;
     height: auto;
     margin-right: 2vw;
@@ -82,3 +83,57 @@ nav {
     height: 100%;
     object-fit: cover;
   }
+.submenu {
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    width: 80vw;
+    height: 10vh;
+    background: linear-gradient(to right, red, black);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: none;
+}
+
+.submenu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.submenu ul li {
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 5vw;
+    font-weight: bold;
+    width: 120px;
+    height: 50%;
+    justify-content: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+}
+
+.submenu ul li:hover {
+    background-color: #ff9b9b;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+.submenu ul li:active {
+    background-color: gray;
+    transform: scale(0.9);
+    box-shadow: none;
+}
