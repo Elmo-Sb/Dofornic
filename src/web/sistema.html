@@ -18,6 +18,7 @@
             </ul>
         </div>
     </nav>
+    
     <div class="menusistema">
         <div id="imagensuperior">
             <img src="https://c.wallhere.com/photos/30/23/abstract_digital_art-131933.jpg!d" alt="imagensuperior">
@@ -29,6 +30,15 @@
         </nav>
         
     </div>
+
+    <div class="bienvenida">
+        <p id="banner">BIENVENIDO</p>
+        <div class="fondocuadro">
+            <p id="subtitulo">¡BIENVENIDO A DOFORNIC!</p>
+            <p id="parrafo">DOFORNIC ofrece soluciones de gestión documental y automatización de flujo de trabajo para empresas de cualquier tamaño, con rápida implementación y siempre disponible.</p>
+        </div>
+    </div>
+
     <div id="content-container">
         <div id="empresa" class="content-section">
             <!-- Contenido de la sección "EMPRESA" -->
@@ -64,12 +74,80 @@
         </div>
         <div id="inicio" class="content-section">
             <!-- Contenido de la sección "INICIO" -->
+            <div class="menuinicio">
+                <div id="reunion">
+                    <img src="/src/Img/iconocamara.png" alt="">
+                    <p>Nueva Reunión</p>
+                </div>
+                <div id="unirse">
+                    <img src="/src/Img/iconounirse.png" alt="">
+                    <p>Unirse</p>
+                </div>
+                <div id="programar">
+                    <img src="/src/Img/iconoprogramar.png" alt="">
+                    <p>Programar</p>
+                </div>
+                <div id="compartir">
+                    <img src="/src/Img/iconocompartir.png" alt="">
+                    <p>Compartir Pantalla</p>
+                </div>
+            </div>
         </div>
         <div id="calendario" class="content-section">
             <!-- Contenido de la sección "CALENDARIO" -->
+            <div id="calendario-container">
+                <div id="calendario-header">
+                    <h2 id="mes-anio"></h2>
+                </div>
+                <table id="calendario-table">
+                    <thead>
+                        <tr>
+                            <th>Domingo</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendario-dias"></tbody>
+                </table>
+                <button id="anterior">&lt;</button>
+                <button id="siguiente">&gt;</button>
+            </div>
+              <div class="opcionescalendario">
+                <ul>
+                    <li>Año &#x25BC</li>
+                    <li>Agenda &#x25BC</li>
+                    <li>Evento &#x25BC</li>
+                    <img src="/src/Img/iconocalendario.png" alt="">
+                </ul>
+              </div>
         </div>
         <div id="reuniones" class="content-section">
             <!-- Contenido de la sección "REUNIONES" -->
+            <div class="toggle-bar">
+                <div class="toggle-option" id="opcion1">Próximas</div>
+                <div class="toggle-option" id="opcion2">Grabaciones</div>
+            </div>
+            <div class="listas">
+                <div id="listaprox">
+                    <ul>
+                        <li id="listatitulo">CAPACITACIÓN DE GESTIÓN</li>
+                        <li id="listaduracion">30/07 8 a.m.</li>
+                    </ul>
+                </div>
+                <div id="listagrab">
+                    <ul>
+                        <li id="listatitulo">CAPACITACIÓN DE DISEÑO</li>
+                        <li id="listaduracion">10/07 10 a.m.</li>
+                        <li id="listaduracion">Duración: 2 horas</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="listaprog"></div>
+
         </div>
         <div id="empresas" class="content-section">
             <!-- Contenido de la sección "EMPRESAS" -->
