@@ -146,15 +146,141 @@
                     </ul>
                 </div>
             </div>
-            <div id="listaprog"></div>
+            <div id="listaprog">
+                <img src="/src/Img/iconoprogramar.png" alt="">
+                <p>Programar una reunión</p>
+            </div>
 
         </div>
         <div id="empresas" class="content-section">
             <!-- Contenido de la sección "EMPRESAS" -->
+            <div class="usuario">
+                <p>USUARIO</p>
+                <input type="text" placeholder="Nombre de la empresa">
+                <img src="/src/Img/logoañadir.png" alt="">
+            </div>
+            <div class="listaempresas">
+                <table>
+                    <tr>
+                      <th>EMPRESA</th>
+                      <th>RUC</th>
+                      <th>MODIFICAR</th>
+                    </tr>
+                    <tr>
+                      <td>Empresa Transportes Joyas S.A.C</td>
+                      <td>20477604294</td>
+                      <td><img src="/src/Img/logoquitar.png" alt="Logo Empresa 1"></td>
+                    </tr>
+                    <tr>
+                      <td>Empresa de Transportes Dios Te Ama S.R.L</td>
+                      <td>20260453476</td>
+                      <td><img src="/src/Img/logoquitar.png" alt="Logo Empresa 2"></td>
+                    </tr>
+                  </table>
+            </div>
+            <button id="guardar">Guardar</button>
         </div>
         <div id="mensajes" class="content-section">
             <!-- Contenido de la sección "MENSAJES" -->
-        </div>
+            <div class="toggle-bar2">
+                <div class="toggle-option" id="opcion3">Cronograma</div>
+                <div class="toggle-option" id="opcion4">Mensajes</div>
+                <div class="toggle-option" id="opcion5">Documentos</div>
+                <div class="toggle-option" id="opcion6">Consultas</div>
+            </div>
+
+            <div id="crono">
+                <table id="tablacrono">
+                    <tr>
+                      <th>Pasos</th>
+                      <th>Fecha Planeada</th>
+                      <th>Fecha Final</th>
+                      <th>Estado</th>
+                    </tr>
+                    <tr>
+                      <td>Recepción de documento</td>
+                      <td>23/05/23 10:00 a.m.</td>
+                      <td>23/05/23 10:00 a.m.</td>
+                      <td id="verde">Activo</td>
+                    </tr>
+                    <tr>
+                      <td>Absolución de consultas</td>
+                      <td>15/08/23 11:00 p.m.</td>
+                      <td>01/10/23 11:00 p.m.</td>
+                      <td id="rojo">Inactivo</td>
+                    </tr>
+                  </table>
+            </div>
+
+            <div id="mens">
+                <div id="conceptos">
+                    <ul>
+                        <li>Datos</li>
+                        <li>Documentos Generales</li>
+                        <li>Estado</li>
+                    </ul>
+                </div>
+                <div id="opcionesmensaje">
+                    <textarea rows="4" cols="50"></textarea>
+                    <div id="docslogos">
+                        <img src="/src/Img/iconoexcel.png" alt="">
+                        <img src="/src/Img/iconoword.png" alt="">
+                        <img src="/src/Img/iconopwp.png" alt="">
+                    </div>
+                    <div id="pendientes">
+                        <div id="pend1">
+                            <p>Empresa de Transportes Joyas S.A.C.</p>
+                        </div>
+                        <div id="pend2">
+                            <p>JoyasTS@gmail.com</p>
+                            <p>GerenciaJoyas@gmail.com</p>
+                        </div>
+                        <div id="pend3">
+                            <p>Pendiente</p>
+                        </div>
+                    </div>
+                    <div id="pendientes2">
+                        <div id="pend4">
+                            <p>Empresa de Transportes Dios te Ama S.R.L.</p>
+                        </div>
+                        <div id="pend5">
+                            <p>GerenciaDios@gmail.com</p>
+                            <p>Diosteama.12@gmail.com</p>
+                        </div>
+                        <div id="pend6">
+                            <p>Recibido</p>
+                        </div>
+                    </div>
+                    <div id="boton">
+                        <img src="/src/Img/iconoenviar.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="docs">
+                <table>
+                    <tr>
+                      <th>EMPRESAS</th>
+                      <th>RUC</th>
+                      <th>DOCUMENTOS</th>
+                    </tr>
+                    <tr>
+                      <td>Empresa Transportes Joyas S.A.C</td>
+                      <td>20477604294</td>
+                      <td><img src="/src/Img/iconoexcel.png" alt="Logo Empresa 1"> <img src="/src/Img/iconoword.png" alt=""></td>
+                    </tr>
+                    <tr>
+                      <td>Empresa de Transportes Dios Te Ama S.R.L</td>
+                      <td>20260453476</td>
+                      <td><img src="/src/Img/iconopwp.png" alt="Logo Empresa 2"> <img src="/src/Img/iconoexcel.png" alt=""></td>
+                    </tr>
+                  </table>
+            </div>
+
+            <div id="cons">
+
+            </div>
+        </div>    
         <div id="progresos" class="content-section">
             <!-- Contenido de la sección "PROGRESOS" -->
         </div>

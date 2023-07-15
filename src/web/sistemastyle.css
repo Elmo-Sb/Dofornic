@@ -437,3 +437,331 @@ nav {
     font-size: 12px;
     margin-left: 1vw;
 }
+#listaprog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid black;
+    padding: 24.5vh 14vw;    
+}
+#listaprog img {
+    height: auto;
+    width: 70%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#listaprog p {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+#listaprog p:hover {
+    color: #740000
+}
+.usuario {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    padding: 20px;
+}
+.usuario p, .usuario input, .usuario img{
+    margin: 20px;
+    padding: 10px 40px;
+}
+.usuario input {
+    border: 2px solid black;
+    width: 20vw;
+}
+.usuario img {
+    padding-left: 0;
+    margin-left: 0;
+    cursor: pointer;
+    width: 2vw;
+    height: auto;
+}
+.listaempresas {
+    max-width: 40vw;
+    text-align: center;
+    margin: 2vh 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.listaempresas table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.listaempresas th,
+.listaempresas td {
+    padding: 10px;
+    border: 2px solid black;
+}
+      
+.listaempresas th {
+    background-color: #f2f2f2;
+}
+.listaempresas img {
+    width: 2vw;
+    height: auto;
+    cursor: pointer;
+}
+#guardar {
+    position: absolute;
+    padding: 10px 20px;
+    margin-top: 20px;
+    right: 29vw;
+    cursor: pointer;
+    border: 2px solid black;
+    font-weight: bold;
+    background: rgb(55, 201, 55);
+}
+#guardar:hover {
+    border: 2px solid gray;
+    background: green;
+    color: white;
+}
+#guardar:active {
+    border: 2px solid green;
+    background: white;
+    color: green;
+}
+.toggle-bar2 {
+    display: flex;
+    width: 30vw;
+    height: 5vh;
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    border: 1px solid black;
+}
+#opcion3.active{
+    background-color: #740000;
+    color: #fff;
+}
+#opcion4.active {
+    background-color: #740000;
+    color: #fff;
+}
+#opcion5.active {
+    background-color: #740000;
+    color: #fff;
+}
+#opcion6.active{
+    background-color: #740000;
+    color: #fff;
+}
+#crono {
+    max-width: 40vw;
+    text-align: center;
+    margin: 2vh 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 15vh;
+}
+#crono {
+    display: none;
+}
+#crono table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#crono th,
+#crono td {
+    padding: 10px;
+    border: 2px solid black;
+}
+      
+#crono th {
+    background-color: #f2f2f2;
+}
+#verde {
+    background-color: greenyellow;
+}
+#rojo {
+    background-color: red;
+}
+#conceptos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 50vh;
+    width: auto;
+    position: absolute;
+
+}
+#mens {
+    display: none;
+}
+
+#conceptos ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 14vh;
+    left: 2vw;
+    width: 10vw;
+}
+#conceptos ul li {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 13vh;
+    border: 2px solid black;
+    position: relative;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(211, 72, 8), rgb(255, 165, 31));
+}
+#opcionesmensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#opcionesmensaje textarea {
+    width: 25vw;
+    height: 14.5vh;
+    position: absolute;
+    top: 14vh;
+    left: 15vw;
+    border: 2px solid black;
+    resize: none;
+}
+#docslogos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    position: absolute;
+    width: 25vw;
+    top: 31.5vh;
+    left: 15vw;
+}
+#docslogos img {
+    width: 4vw;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+#pendientes {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    left: 15vw;
+}
+#pendientes2 {
+    display: flex;
+    position: absolute;
+    top:56vh;
+    left: 15vw;
+}
+#pendientes div, #pendientes2 div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 12vw;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+#pendientes div p, #pendientes2 div p {
+    display: flex;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px;
+}
+
+#pend1 {
+    justify-content: space-around;
+    align-items: center;
+}
+#pend3 {
+    justify-content: space-around;
+    align-items: center;
+    color: red;
+}
+#pend4 {
+    justify-content: space-around;
+    align-items: center;
+}
+#pend6 {
+    justify-content: space-around;
+    align-items: center;
+    color: green;
+}
+#boton {
+    position: absolute;
+    top: 51.5vh;
+    right: 20vw;
+    width: 5vw;
+    height: 8vh;
+    background-color: green;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#boton:hover {
+    background-color: rgb(103, 172, 0);
+    border: 2px solid green;
+}
+#boton:active {
+    background-color: rgb(82, 163, 82);
+}
+#boton img {
+    width: 70%;
+    height: auto;
+    filter: invert(100%);
+}
+#docs {
+    max-width: 40vw;
+    text-align: center;
+    margin: 2vh 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 15vh;
+    font-weight: bold;
+}
+#docs {
+    display: none;
+}
+#docs table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#docs th,
+#docs td {
+    padding: 10px 20px;
+    border: 2px solid black;
+}
+#docs th {
+    background: linear-gradient(to right, rgb(211, 72, 8), rgb(255, 165, 31));
+}
+#docs td {
+    background-color: #f2f2f2;
+}
+#docs tr td img {
+    width: 4vw;
+    height: auto;
+    cursor: pointer;
+    margin: 0px 10px;
+}

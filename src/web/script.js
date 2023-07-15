@@ -207,3 +207,44 @@ document.addEventListener('DOMContentLoaded', function() {
 // Ocultar los divs inicialmente
 document.getElementById('listaprox').style.display = 'none';
 document.getElementById('listagrab').style.display = 'none';
+
+document.addEventListener('DOMContentLoaded', function() {
+  const opciones = document.querySelectorAll('.toggle-option');
+  const cronogramaDiv = document.getElementById('crono');
+  const mensajesDiv = document.getElementById('mens');
+  const documentosDiv = document.getElementById('docs');
+  const consultasDiv = document.getElementById('cons');
+
+  opciones.forEach(function(opcion) {
+    opcion.addEventListener('click', function() {
+      opciones.forEach(function(opcion) {
+        opcion.classList.remove('active');
+      });
+
+      opcion.classList.add('active');
+
+      // Mostrar el div correspondiente a la opción seleccionada
+      if (opcion.id === 'opcion3') {
+        cronogramaDiv.style.display = 'block';
+        mensajesDiv.style.display = 'none';
+        documentosDiv.style.display = 'none';
+        consultasDiv.style.display = 'none';
+      } else if (opcion.id === 'opcion4') {
+        cronogramaDiv.style.display = 'none';
+        mensajesDiv.style.display = 'block';
+        documentosDiv.style.display = 'none';
+        consultasDiv.style.display = 'none';
+      } else if (opcion.id === 'opcion5') {
+        cronogramaDiv.style.display = 'none';
+        mensajesDiv.style.display = 'none';
+        documentosDiv.style.display = 'block';
+        consultasDiv.style.display = 'none';
+      } else if (opcion.id === 'opcion6') {
+        cronogramaDiv.style.display = 'none';
+        mensajesDiv.style.display = 'none';
+        documentosDiv.style.display = 'none';
+        consultasDiv.style.display = 'block';
+      }
+    });
+  });
+});
