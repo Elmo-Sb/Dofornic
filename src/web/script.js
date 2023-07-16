@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var submenuOptions = {
     'Información': ['EMPRESA', 'PLATAFORMA'],
     'Conferencia': ['INICIO', 'CALENDARIO', 'REUNIONES'],
-    'Documentación': ['EMPRESAS', 'MENSAJES', 'PROGRESOS']
+    'Documentación': ['EMPRESAS', 'MENSAJES', 'PROGRESO']
   };
   
   navbarItems.forEach(function(item) {
@@ -247,4 +247,96 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const opciones = document.querySelectorAll('.toggle-option2');
+
+  opciones.forEach(function(opcion) {
+    opcion.addEventListener('click', function() {
+      if (opcion.classList.contains('active')) {
+        return;
+      }
+
+      opciones.forEach(function(opcion) {
+        opcion.classList.remove('active');
+      });
+
+      opcion.classList.add('active');
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const opciones = document.querySelectorAll('.toggle-option2');
+  const recepDiv = document.getElementById('recep');
+  const absoDiv = document.getElementById('abso');
+
+  opciones.forEach(function(opcion) {
+    opcion.addEventListener('click', function() {
+      opciones.forEach(function(opcion) {
+        opcion.classList.remove('active');
+      });
+
+      opcion.classList.add('active');
+
+      // Mostrar el div correspondiente a la opción seleccionada
+      if (opcion.id === 'opcion7') {
+        recepDiv.style.display = 'block';
+        absoDiv.style.display = 'none';
+      } else if (opcion.id === 'opcion8') {
+        recepDiv.style.display = 'none';
+        absoDiv.style.display = 'block';
+    }});
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const opciones = document.querySelectorAll('.toggle-option');
+  const descpDiv = document.getElementById('descp');
+  const actDiv = document.getElementById('act');
+  const confDiv = document.getElementById('conf');
+  
+
+  opciones.forEach(function(opcion) {
+    opcion.addEventListener('click', function() {
+      opciones.forEach(function(opcion) {
+        opcion.classList.remove('active');
+      });
+
+      opcion.classList.add('active');
+
+      // Mostrar el div correspondiente a la opción seleccionada
+      if (opcion.id === 'opcion9') {
+        descpDiv.style.display = 'block';
+        actDiv.style.display = 'none';
+        confDiv.style.display = 'none';
+      } else if (opcion.id === 'opcion10') {
+          descpDiv.style.display = 'none';
+          actDiv.style.display = 'block';
+          confDiv.style.display = 'none';
+      }  else if (opcion.id === 'opcion11') {
+          descpDiv.style.display = 'none';
+          actDiv.style.display = 'none';
+          confDiv.style.display = 'block';
+      }
+    });
+  });
+});
+const logoDiv = document.getElementById("logomenu");
+const menuDiv = document.getElementById("menuusuario");
+
+logoDiv.addEventListener("click", function(event) {
+  event.stopPropagation(); // Evita que el clic se propague al documento
+  if (menuDiv.style.display === "block") {
+    // Si el div2 está abierto, lo cerramos
+    menuDiv.style.display = "none";
+  } else {
+    // Si el div2 está cerrado, lo abrimos
+    menuDiv.style.display = "block";
+  }
+});
+
+document.addEventListener("click", function(event) {
+  // Oculta el div2 si se hace clic fuera de él
+  if (!menuDiv.contains(event.target) && event.target !== logoDiv) {
+    menuDiv.style.display = "none";
+  }
 });
