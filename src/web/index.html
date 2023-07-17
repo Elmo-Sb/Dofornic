@@ -3,27 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/web/PDIstyle.css">
+
     <title>DOFORNIC</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fondo">
-        <img src="/src/Img/rascacielos.jpg" alt="Fondo">
-    </div>
-    <div class="fondo_circulo"></div>
-    <div class="login-menu">
-        <img src="/src/Img/logoDofornic.PNG" alt="Logo">
-        <input type="text" placeholder="Usuario">
-        <input type="password" placeholder="Contraseña">
-        <div class="session-checkbox">
-        <input type="checkbox" id="session-checkbox">
-        <label for="session-checkbox">Mantener sesión activa</label>
+    <nav>
+        <div class="navbar-left">
+            <img src="/src/Img/logoDofornic.PNG" alt="logo" class="logo">
+            <ul>
+                <li>
+                    <a href="/">Transformación Digital</a>
+                </li>
+                <li>
+                    <a href="/">Soluciones</a>
+                </li>
+                <li>
+                    <a href="/">Productos</a>
+                </li>
+                <li>
+                    <a href="/">Acerca de</a>
+                </li>
+            </ul>
         </div>
-        <button type="submit">Ingresar</button>
-        <div class="help-text">
-            <a href="#">¿Necesitas ayuda?</a>
+    
+        <div class="navbar-right">
+        <ul>
+            <li>
+                <a href="http://127.0.0.1:5500/src/web/index.html">MI PERFIL</a>
+            </li>
+            <li>
+                <a href="/">CONTACTO</a>
+            </li>
+            <li>
+                <a href="/">ESPAÑOL</a>
+            </li>
+            <a href="http://127.0.0.1:5500/src/web/index.html">
+                <button class="boton">PRUEBA GRATIS</button>
+            </a>
+        </ul>
         </div>
+    </nav>
+    <img id="logoCentral" src="/src/Img/logoDofornic.PNG" alt="logoCentral">
+    <p id="primerTexto">Ofrece soluciones de gestión documental y automatización de workflows para empresas de cualquier tamaño, con rápida implantación y siempre disponible.</p>
+    <div class="bloqueInferior">
+        <div id="cuadrorojo"></div>
+        <img id="trabajando" src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagentrabajando">
+        <p id="titulo">Proteja la información y workflows con una solución SaaS</p>
+        <ul class="lista">
+            <li>
+                <p>Proteja la información y cumpla con las exigencias normativas como HIPAA y RGPD.</p> 
+            </li>
+            <li>
+                <p>Apoye a equipos distribuidos y móviles con acceso desde cualquier lugar y en cualquier momento.</p>
+            </li>
+            <li>
+                <p>Mueva la información entre personas y sistemas con una estrecha integración con su ERP, CRM u otra aplicación.</p>
+            </li>
+        </ul>
+        <img id="letra" src="/src/Img/letraCfondonegro.PNG" alt="logo">
     </div>
-    <img src="/src/Img/logoDofornicLetra.PNG" alt="Logo" class="logo-C">
 </body>
 </html>
